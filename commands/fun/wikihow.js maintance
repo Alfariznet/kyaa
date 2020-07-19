@@ -1,0 +1,25 @@
+const Discord = require('discord.js');
+const { MessageEmbed } = require("discord.js")
+const KagApi = require("@kagchi/kag-api")
+const api = new KagApi()
+const msg = Discord.message;
+
+exports.run = async (client, msg) => {
+const wikihow = await api.wikihow()
+const embed = new MessageEmbed()
+.setTitle(wikihow.title)
+.setImage(wikihow.url)
+msg.channel.send(embed)
+}
+
+exports.help = {
+  name: "wikihow (maintance)",
+  description: "Show random Wikihow image",
+  usage: "wikihow",
+  example: "k!wikihow"
+}
+
+exports.conf = {
+  aliases: ["wk"],
+  cooldown: 3
+}

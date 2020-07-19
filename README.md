@@ -1,2 +1,1 @@
-# kyaa
-Backup from glitch
+# Gimana nehh

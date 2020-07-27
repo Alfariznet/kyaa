@@ -30,8 +30,7 @@
     "os-toolbox": "^0.2.10",
     "os-name": "^3.1.0",
     "random-puppy": "^1.1.0",
-    "@kagchi/kag-api": "^1.0.7",
-    "kag": "^0.67.0"
+    "@kagchi/kag-api": "^1.1.1"
   },
   "engines": {
     "node": "12.x"
